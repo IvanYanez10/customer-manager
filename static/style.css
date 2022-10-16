@@ -1,21 +1,22 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0;  
+  background-color: #1D1D1E;
+  background-image: url('../images/fluid-planet.png');
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: center left;
+  background-size: auto 100%;
 }
+
 .box {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
+  transform: translate(-30%, -50%);
+  width: 450px;
   padding: 50px;
-  background: rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
   text-align: center;
 }
 .box h1 {
@@ -30,45 +31,41 @@ body {
 .box .inputBox input {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
-  color: #fff;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-}
-.box .inputBox label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: 1px;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s;
-}
-.box .inputBox input:focus ~ label,
-.box .inputBox input:valid ~ label {
-  top: -18px;
-  left: 0;
-  color: #03a9f4;
   font-size: 12px;
-}
-.register {
-  color: #03a9f4;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background: #2C2C2E;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;  
+  text-align: center;
+  height: 50px;
 }
 .box input[type="submit"] {
-  background: transparent;
   border: none;
   outline: none;
   color: #fff;
-  background: #03a9f4;
+  background: #037AFA;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  width: 100%;
+  font-weight: bold;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+::placeholder { 
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+::-ms-input-placeholder {
+  color: red;
 }
 
 a {
@@ -76,4 +73,25 @@ a {
   margin-left: 2%;
   text-decoration: none;
   font-size: 0.7rem;
+  font-weight: 100;
+}
+a:hover{
+  color:#037AFA;
+}
+
+p{
+  color: #434245;
+}
+.thoubles{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  margin: 20px;
+}
+.rights{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
 }

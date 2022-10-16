@@ -1,0 +1,78 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #1D1D1E;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+header{
+  height: 50px;
+  padding: 0 20px;
+}
+.content{
+  display: flex;
+  margin: 0;
+  min-height: 600px;
+  max-height: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+.first{
+  margin: 10px;
+  width: 300px;
+  background-color: #303236;  
+}
+.customer-data{
+  height: 60%;
+  margin: 10px;
+}
+.ads{  
+  bottom: 0;
+}
+.ads img{
+  margin: auto;
+  display: block;
+  border-radius: 15px;  
+}
+.services{
+  margin: 10px 0;
+  width: 83%;
+  min-width: 500px;
+  overflow: hidden;
+}
+.list-services{
+  height: 100%;
+  overflow-y: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d6d6d6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(63, 63, 63);
+}
+.service{
+  height: 70px;
+  width: 99%;
+  background-color: #303236;
+  color: white;
+  margin: 5px 10px;
+  padding: 12px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
